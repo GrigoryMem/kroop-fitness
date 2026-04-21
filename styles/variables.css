@@ -1,0 +1,26 @@
+:root {
+  /* цвета */
+  --color-dark: #000000;
+  --color-light: #ffffff;
+  --color-dark-gray: #404040;
+  --color-light-gray: #C4C4C4;
+
+  --border-radius: 30px;
+  --border: 1px solid var(--color-light, #ffffff);
+  /* шрифты */
+  /* обязательно fallback */
+  --font-family-base:'Heebo', sans-serif;
+  --font-family-accent:'Yantramanav' sans-serif;
+  --fw-title: 700;
+  --fw-accent: var(--fw-title);
+
+  /* высота кнопок и полей ввода */
+  --input-height:54px;
+/*  ширина ограничивающая контейнерную сетку */
+  --container-width:1300px;
+  /* переменная для горизонт внутр отступов, 
+  чтобы при изменении ширины экрана контент не слипался с краями */
+  --container-padding-x: 15px;
+  /* длительность transtition переходов кот использ при добав плавности интерактвным элементам */
+  --transition-duration: 0.2s;
+}

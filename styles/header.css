@@ -1,0 +1,85 @@
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*  чтобы элементы шапки не слипались при сужении экрана */
+  column-gap: 20px;
+}
+.header-logo {
+  flex-shrink: 0;
+}
+.header-logo-image {
+}
+.header-menu {
+}
+.header-menu-list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 50px;
+
+}
+.header-menu-item {
+}
+.header-menu-link {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 7px;
+  /*  засчет высоты увеличивваем область нажатияна ссылки */
+  height: 90px;
+  font-family:var(--font-family-base);
+  font-weight: var(--fw-accent,700);
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.header-menu-link.is-current::after {
+  content: '';
+  border-radius: 50%;
+  background-color: currentColor;
+  inline-size: 5px;
+  aspect-ratio: 1;
+}
+.header-actions {
+  display: flex;
+  column-gap: 40px;
+}
+
+.header-book-button {
+}
+.header-burger-button {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  row-gap: 4px;
+  width: 40px;
+  height: 40px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  color:var(--color-light);
+  background-color: transparent;
+  transition: color --transition-duration ease-in-out;
+  inline-size: 40px;
+}
+
+.header-burger-button:hover {
+    border-color: currentColor;
+    color:var(--color-light-gray);
+}
+
+.header-burger-button-line {
+  width: 6px;
+  height: 1px;
+  padding-inline-start: 8px;
+  box-shadow: 18px 0 0  currentColor;
+  background-color: currentColor;
+  inset-inline-start: 5px;
+  inset-block-start: 5px;
+}
+
+
+
