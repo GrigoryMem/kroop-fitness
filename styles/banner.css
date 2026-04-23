@@ -1,0 +1,24 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-height: 985px;
+  padding: 36px 70px;
+  color:var(--color-light, #ffffff);
+  background-color: var(--color-dark-alternate, #131619);
+}
+
+.banner-body {
+  text-transform: uppercase;
+}
+
+.banner-title {
+  /* !!!! */
+  font-size: 360px;
+}
+
+.banner-info {
+  /*  для стрелки ???? */
+  display: flex;
+  align-items: end;
+}
